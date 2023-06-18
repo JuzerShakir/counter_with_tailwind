@@ -1,0 +1,14 @@
+<h1 class="text-5xl font-normal leading-normal">Pages#home</h1>
+
+<%= content_tag(:div, "", data: {
+    controller: "counter"
+}) do %>
+    <%= content_tag(:p, "You haven't clicked the button!", data: {
+        counter_target: "output"
+    }) %>
+    <%= content_tag(:button, "Increament counter", data: {
+        action: "click->counter#increment"
+    }, class: "text-teal-500 border border-teal-500 hover:bg-teal-500 hover:text-white
+                active:bg-teal-600 font-bold uppercase text-sm px-6 py-3 rounded outline-none
+                focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150") %>
+<% end %>
