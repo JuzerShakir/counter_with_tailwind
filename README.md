@@ -1,24 +1,13 @@
-# README
+### Commands
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+```bash
+rails new counter_with_tailwind -c tailwind -j esbuild
+```
 
-Things you may want to cover:
+```bash
+rails g controller pages home
+```
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+```bash
+rails g stimulus counter
+```
